@@ -1,0 +1,9 @@
+{
+  "name": "fittrack-monorepo",
+  "private": true,
+  "workspaces": ["services/*","apps/*"],
+  "scripts": {
+    "bootstrap": "yarn install",
+    "build": "yarn workspace backend build && yarn workspace web build && yarn workspace mobile build"
+  }
+}
